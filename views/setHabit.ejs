@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js" integrity="sha512-lOrm9FgT1LKOJRUXF3tp6QaMorJftUjowOWiDcG5GFZ/q7ukof19V0HKx/GWzXCdt9zYju3/KhBNdCLzK8b90Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css" integrity="sha512-0p3K0H3S6Q4bEWZ/WmC94Tgit2ular2/n0ESdfEX8l172YyQj8re1Wu9s/HT9T/T2osUw5Gx/6pAZNk3UKbESw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="/css/setHabit.css">
+	<title>sprintFit</title>
+</head>
+<body>
+	<div id="title">Create Your Habit</div>
+
+	<div id="Name">
+		<input type="text" placeholder="Habit Name..." name="habit" required>
+	    <input type="date" name="date" required>
+
+	</div>
+
+    <div id="submit-button">
+		<input type="submit" id="submit">
+    </div>
+
+	<!-- </form> -->
+    
+    <!-- <div>
+        <input type="date">
+    </div> --> 
+    <!-- <div id = "noHabits">
+        No Habits for today
+    </div> 
+ --><!-- <div id="Habits">
+        <div class="HabitTile">
+            <span class="setted-habit">Gym</span>
+            <div class="checkBox">
+                <input type="checkbox">
+                <span>Done</span>
+                <input type="checkbox">
+                <span>Not Done</span>
+            </div>
+        </div>
+    </div> -->
+
+	<div class="fab-container">
+		<ul class="fab-options">
+			<li>
+				<span class="fab-label">Add Habit</span>
+				<div class="fab-icon-holder">
+                    <i class="fas fa-plus"></i>
+                </div>
+
+			</li>
+			<a href="/HabitHome">
+				<li>
+                
+                <span class="fab-label">Go To</span>
+                <div class="fab-icon-holder">
+                    <i class="fas fa-calendar"></i>
+                </div>
+                
+            </li>
+			</a>
+
+		</ul>
+	</div>
+
+</body>
+<script src="/js/setHabit.js"></script>
+</html>

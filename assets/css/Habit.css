@@ -1,0 +1,117 @@
+body{
+	margin: 0px;
+	background-size: cover;
+	background-image: url(https://img.freepik.com/free-photo/yellow-list-top-view_23-2148475388.jpg?w=2000);
+}
+#title{
+	text-align: center;
+	color: aqua;
+	font-family: cursive;
+	font-size: 250%;
+}
+#inputDate{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 4rem;
+}
+
+#inputDate input{
+	height: 3rem;
+	width: 8rem;
+	/* background-color: #fbd100; */
+	border: none;
+	margin-left: 1rem;
+}
+
+#inputDate input:hover{
+	background-color: #19aeb5;
+	
+}
+
+input[type="submit"]{
+	background-color: #28334AFF;
+	font-size: 30px;
+	border: none;
+	outline: none;
+	border-radius: 33%;
+	width: 5rem;
+	color: white;
+}
+input[type="date"]{
+	background-color: #28334AFF;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	border-radius: 33%;
+	width: 5rem;
+	color: white;
+}
+
+
+#habits{
+	margin: auto;
+	margin-top: 5rem;
+	height: 3rem;
+	width: 25rem;
+	position: relative;
+	padding: 2rem;
+	
+}
+
+.habitsTitle{
+	margin-bottom: 2rem;
+	background-color: lightsalmon;
+	width: 28rem;
+}
+
+#confirm{
+	background-color: #e32246;
+	margin: auto;
+	height: inherit;
+	width: inherit;
+	font-size: x-large;
+}
+
+.confirmHabit{
+	margin: auto;
+	height: 3rem;
+	width: 7rem;
+	margin-top: 4rem;
+}
+
+.checkBox{
+	position: absolute;
+	right: 0;
+	margin-top: -20px;
+}
+
+.fab-container{
+	width: 10rem;
+	height: 15rem;
+	display: flex;
+}
+.fab-container ul li{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	margin-top: 2rem;
+
+}
+
+.fab-container ul a{
+	text-decoration: none;
+}
+
+.fab-label{
+	font-size: 25px;
+    font-weight: 800;
+	color: #086e9f;
+}
+.fab-icon-holder{
+	margin-left: 0.5rem;
+}
+.fab-icon-holder i{
+	color: #e32246;
+	font-size: 1.5rem;
+}

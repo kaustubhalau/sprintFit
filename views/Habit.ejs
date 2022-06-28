@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js" integrity="sha512-lOrm9FgT1LKOJRUXF3tp6QaMorJftUjowOWiDcG5GFZ/q7ukof19V0HKx/GWzXCdt9zYju3/KhBNdCLzK8b90Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css" integrity="sha512-0p3K0H3S6Q4bEWZ/WmC94Tgit2ular2/n0ESdfEX8l172YyQj8re1Wu9s/HT9T/T2osUw5Gx/6pAZNk3UKbESw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="/css/Habit.css">
+    <title>SprintBit</title>
+
+</head>
+<body>
+    <div id="title"> Habits/Tasks for the Day</div>
+
+    <div id="inputDate">
+        <input type="date" id="date-input" name="date">
+        <input type="submit" id="submit-date">
+    </div>    
+    
+    <!-- This div will be kept hidden and will only shown when no thing is to display -->
+    <div id="noHabitstoDisplay" hidden>
+        You have Not set any habit right now
+    </div>
+
+    <div id="habits" hidden>
+
+        <!-- <div class="habitsTitle">
+            Workout
+            <div class="checkBox">
+                <input type="checkBox" name="">
+                <span>Done</span>
+                <input type="checkBox" name="">
+                <span>Not Done</span>
+            </div>
+        </div> -->
+    </div>
+    
+    <div class="confirmHabit">
+    <input type="submit" id="confirm" value="confirm" hidden>
+    </div>
+
+     <div class="fab-container">
+        <!-- <div class="fab fab-icon-holder">
+            <i class="fas fa-question"></i>
+        </div> -->
+        <ul class="fab-options">
+            <a href="/getCreateHabitPage">
+            <li>
+                
+                <span class="fab-label">Add Habit</span>
+                <div class="fab-icon-holder">
+                    <i class="fas fa-plus"></i>
+                </div>
+                
+            </li>
+            </a>
+            
+            <li>
+                <span class="fab-label">Go To Calender</span>
+                <div class="fab-icon-holder">
+                    <i class="fas fa-calendar"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+<script src="/js/Habit.js"></script>
+</html>

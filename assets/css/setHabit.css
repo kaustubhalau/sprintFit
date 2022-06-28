@@ -1,0 +1,110 @@
+body{
+	margin: 0px;
+	background-size: cover;
+	background-image: url(https://img.freepik.com/free-photo/yellow-list-top-view_23-2148475388.jpg?w=2000);
+}
+
+#title{
+	text-align: center;
+	color: #F65058FF;
+	font-family: cursive;
+	font-size: 250%;
+	
+}
+
+#Name{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 4rem;
+}
+#Name input{
+	height: 3rem;
+	width: 15rem;
+	/* background-color: #fbd100; */
+	border: none;
+	margin-left: 1rem;
+
+}
+
+/* #Name input:hover{
+	background-color: #28334AFF;
+} */
+
+input[type="text"]{
+	background-color: #28334AFF;
+	font-size: 30px;
+	border: none;
+	outline: none;
+	border-radius: 20%;
+	width: 5rem;
+	color: white;
+}
+input[type="date"]{
+	background-color: #28334AFF;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	border-radius: 33%;
+	width: 5rem;
+	color: white;
+}
+
+#submit{
+	background-color: #e32246;
+	/*margin: auto;*/
+	height: inherit;
+	width: inherit;
+	font-size: x-large;
+}
+#submit-button{
+	margin: auto;
+	height: 3rem;
+	width: 7rem;
+	margin-top: 4rem;
+}
+
+.fab-container{
+	height: 10rem;
+	width: 10rem;
+
+}
+.fab-container ul li{
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: row;
+	justify-content: space-between;
+	margin-top: 4rem;
+}
+
+.fab-container ul a{
+	text-decoration: none;
+	color: black;
+}
+
+#Habits{
+	position: relative;
+	height: 3rem;
+	width: 25rem;
+	margin: auto;
+	background-color: #03d1ff;
+}
+
+.checkBox{
+	position:absolute;
+	right: 0;
+}
+
+.setted-habit{
+	margin-top: 0.5%;
+}
+
+.fab-label{
+	font-size: 25px;
+    font-weight: 800;
+	color: #086e9f;
+}
+.fab-icon-holder i{
+	color: #e32246;
+	font-size: 1.5rem;
+}
