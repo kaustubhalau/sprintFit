@@ -15,8 +15,6 @@ const path = require('path');
 // const flash = require('connect-flash');
 // const customMware = require('./config/middleware'); // see in config
 
-
-// app.use(express.static('./assets'));
 app.use(express.static('./assets'));
 
 
