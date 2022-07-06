@@ -6,7 +6,7 @@ We can use this web app to track our habit and schedule date on which we have se
 
 ### Setup
 First download the code and write in your editor's terminal **npm install** it will install all dependencies and then write **npm start**.then app will start on server.
-Now write thi **http://localhost:8000/HabitHome** url in web browser and you are all set to go.
+Now write this **http://localhost:8000/HabitHome** url in web browser and you are all set to go.
 Now you can add Habit by clicking on add habit and search a scheduled habit by going to calender.
 
 ### Detailed video is available on youtube
