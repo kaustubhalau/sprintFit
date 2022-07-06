@@ -9,7 +9,7 @@ First download the code and write in your editor's terminal **npm install** it w
 Now write thi **http://localhost:8000/HabitHome** url in web browser and you are all set to go.
 Now you can add Habit by clicking on add habit and search a scheduled habit by going to calender.
 
-### Detailer video is available on youtube
+### Detailed video is available on youtube
 Here is the link:https://www.youtube.com/watch?v=iv86Ej-XxTI
 
 Note:ignore procfile folder
