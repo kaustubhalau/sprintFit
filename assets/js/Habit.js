@@ -9,14 +9,14 @@ function getHabits(data){
             $('#habits').empty();
             $('#habits').attr("hidden", true);
             $('#confirm').attr("hidden", true);
-            $('#noHabitstoDisplay').attr("hidden", true);
-            if(res.data.habits.length>0){
+            $('#noHabitstoDisplay').attr("hidden", true); 
+            if(res.data.habits.length>0){                     // if there are habits then show the habits 
                 $('#habits').removeAttr('hidden');
                 $('#confirm').removeAttr('hidden');
                 for(let i of res.data.habits){
                     console.log("getHabits() function working ",i);
                     let newHabit = getHabitTitle(i);
-                    $('#habits').prepend(newHabit);
+                    $('#habits').prepend(newHabit);             // prepend new habits to previous habits
                 }
             }else{
                 $('#noHabits').removeAttr('hidden');
@@ -29,8 +29,8 @@ function getHabits(data){
 }
 
 function getHabitTitle(obj){
-    console.log("getHabitTitle working: ",obj);
-    if(obj.status == "Done"){
+    console.log("getHabitTitle working: ",obj.status);                     
+    if(obj.status == "Done"){                                    // getting habit status done,not done, nothing and show the fronend accordingly
         return $(`<div class="habitsTitle" id=${obj._id}>
         ${obj.habit}
         <div class="checkBox">
@@ -38,7 +38,7 @@ function getHabitTitle(obj){
                 <span>Done</span>
                 <input type="checkbox" value="NotDone">
                 <span.l>Not Done</span.l>
-            </div>
+        </div>
     </div>`)
     }else if(obj.status == "NotDone"){
         return $(`<div class="habitsTitle" id=${obj._id}>
@@ -52,7 +52,8 @@ function getHabitTitle(obj){
     </div>`)
     
     }
-    return $(`<div class="habitsTitle" id=${obj._id}>
+    //if nothing is selected
+    return $(`<div class="habitsTitle" id=${obj._id}>                 
     ${obj.habit}
     <div class="checkBox">
         <input type="checkbox" value="Done">
@@ -63,7 +64,7 @@ function getHabitTitle(obj){
 </div>`)
 }
 
-function getLastDate(){
+function getLastDate(){                                  // GET THE DATE in redeable format
     var lastDate = new Date().setDate(new Date().getDate() - 6);
     let last = new Date(lastDate);
     var lastDay = ("0" + last.getDate()).slice(-2);

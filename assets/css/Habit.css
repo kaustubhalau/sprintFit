@@ -56,8 +56,11 @@ input[type="date"]{
 	width: 25rem;
 	position: relative;
 	padding: 2rem;
+	font-weight: 800;
+	color: #11044b;
 	
 }
+
 
 .habitsTitle{
 	margin-bottom: 2rem;

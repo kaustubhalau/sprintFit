@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 
 module.exports.createHabit = async function(req,res){
     try{
-        let date = new Date(req.body.date).toLocaleDateString();
-        let habit = User.create({habit:req.body.habit, date: date});
+        let date = new Date(req.body.date).toLocaleDateString(); //get the date in language sensistive format
+        let habit = User.create({habit:req.body.habit, date: date});       // crete user with habit and date
         console.log(habit);
         return res.status(200).json({
             message: "Data added successfully",

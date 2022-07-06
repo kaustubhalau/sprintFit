@@ -3,15 +3,15 @@ const mongoose = require('mongoose');
 
 module.exports.getSchedule = async function(req, res){
     try{
-        console.log(req.body.date);
-        let date = new Date(req.body.date).toLocaleDateString();
+        console.log(req.body.date);       // get date from body
+        let date = new Date(req.body.date).toLocaleDateString();// returns a string with language sensitive representation for date portion 
         console.log('print date', date);
-        let habits = await User.find({date: date});
+        let habits = await User.find({date: date});  // find habit by date
 
         return res.status(200).json({
             message: "Found it",
             data: {
-                habits : habits
+                habits : habits           // return habit
             }
         });
     }catch(err){
@@ -30,6 +30,7 @@ module.exports.updateStatus = async function(req,res){
     return res.render
 }
 
+//Updating status by id
 module.exports.updateStatus = async function(req, res){
     try{
         let arr = req.body;
